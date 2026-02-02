@@ -1,4 +1,6 @@
-document.querySelector
+const newCard = document.querySelector(".newbtn button")
+const dialog = document.querySelector("dialog")
+const closeDia = document.querySelector(".dialog-container button")
 
 //, title, number of pages, whether it’s been read and anything else you might want
 const myLibrary = []
@@ -20,3 +22,10 @@ function addBookToLibrary(author, title, pages){
 function display(){
     
 }
+
+newCard.addEventListener("click", (event) => {
+    dialog.showModal()
+})
+closeDia.addEventListener("click", (event) => {
+    dialog.close()
+})
