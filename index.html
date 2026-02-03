@@ -16,33 +16,30 @@
         <div class="X">
           <button>x</button>
         </div>
-        <form action="">
+        <form class="add-Book-Form">
           <div>
             <label for="author">Author</label>
-            <input type="text" name="Author" id="author" />
+            <input type="text" name="Author" id="author" required/>
           </div>
           <div>
             <label for="title">Title</label>
-            <input type="text" name="title" id="title" />
+            <input type="text" name="title" id="title" required/>
           </div>
           <div>
             <label for="pages">Pages</label>
-            <input type="number" name="pages" id="pages" />
+            <input type="number" name="pages" id="pages" required/>
           </div>
           <div id="checkbx">
-            <label for="read">Read?</label>
+            <label for="read">I've read it</label>
             <input type="checkbox" name="read" id="read" />
           </div>
           <div class="addBtn">
-          <button>Add</button>
-        </div>
+            <input id="submitbtn" type="submit" value="Submit" />
+          </div>
         </form>
-        
       </dialog>
     </div>
-
     <div class="books-container"></div>
-
     <script src="script.js" defer></script>
   </body>
 </html>
