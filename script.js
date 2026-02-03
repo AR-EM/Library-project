@@ -1,6 +1,6 @@
 const newCard = document.querySelector(".newbtn button")
 const dialog = document.querySelector("dialog")
-const closeDia = document.querySelector(".dialog-container button")
+const closeDia = document.querySelector(".dialog-container .X")
 
 //, title, number of pages, whether it’s been read and anything else you might want
 const myLibrary = []

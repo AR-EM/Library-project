@@ -9,17 +9,23 @@
   text-align: center;
 }
 
-dialog{
+dialog[open] {
   margin: auto;
-  width: 20rem;
-  height: 10rem;
+  width: 25rem;
+  height: 25rem;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  overflow: hidden;
+  background-color: palegoldenrod;
 }
-
 
 .newbtn > button {
   padding: 15px 30px;
   font-size: 20px;
   background-color: rgb(139, 255, 240);
+  border-radius: 10px;
 }
 
 .newbtn > button:hover {
@@ -29,4 +35,54 @@ dialog{
 h1 {
   margin-top: 5rem;
   text-align: center;
+}
+
+.dialog-container > dialog > form > div > input {
+  font-size: 22px;
+  padding: 5px;
+}
+
+.dialog-container > dialog > form > div {
+  font-size: 25px;
+  display: flex;
+  flex-direction: column;
+}
+
+.dialog-container > dialog > form {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  gap: 20px;
+  margin-top: -30px;
+}
+
+#checkbx {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+input[type="checkbox"]{
+  transform: scale(1.8);
+}
+
+.addBtn button{
+  padding: 5px;
+}
+
+.dialog-container > dialog > div > button{
+  font-size: 25px;
+}
+
+.dialog-container .X{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -25px;
+  margin-right: -22px;
+  font-size: 20px;
+}
+.X > button{
+  padding-left: 5px;
+  padding-right: 5px;
 }

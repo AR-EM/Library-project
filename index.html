@@ -13,10 +13,35 @@
     </div>
     <div class="dialog-container">
       <dialog>
-        <button autofocus>Close</button>
-        <p>Book Description</p>
+        <div class="X">
+          <button>x</button>
+        </div>
+        <form action="">
+          <div>
+            <label for="author">Author</label>
+            <input type="text" name="Author" id="author" />
+          </div>
+          <div>
+            <label for="title">Title</label>
+            <input type="text" name="title" id="title" />
+          </div>
+          <div>
+            <label for="pages">Pages</label>
+            <input type="number" name="pages" id="pages" />
+          </div>
+          <div id="checkbx">
+            <label for="read">Read?</label>
+            <input type="checkbox" name="read" id="read" />
+          </div>
+          <div class="addBtn">
+          <button>Add</button>
+        </div>
+        </form>
+        
       </dialog>
     </div>
+
+    <div class="books-container"></div>
 
     <script src="script.js" defer></script>
   </body>
