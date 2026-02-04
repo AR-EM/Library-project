@@ -4,6 +4,14 @@
   box-sizing: border-box;
   font-family: "Courier New", Courier, monospace;
 }
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: antiquewhite;
+}
+
 .newbtn {
   margin-top: 25px;
   text-align: center;
@@ -34,7 +42,7 @@ dialog[open] {
   background-color: rgb(1, 218, 181);
 }
 
-h1 {
+.main-title {
   margin-top: 5rem;
   text-align: center;
 }
@@ -69,17 +77,15 @@ h1 {
   gap: 20px;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"] {
   transform: scale(2);
 }
 
-
-
-.dialog-container > dialog > div > button{
+.dialog-container > dialog > div > button {
   font-size: 25px;
 }
 
-.dialog-container .X{
+.dialog-container .X {
   display: flex;
   justify-content: flex-end;
   margin-top: -25px;
@@ -87,7 +93,58 @@ input[type="checkbox"]{
   font-size: 20px;
   border-radius: 10px;
 }
-.X > button{
+.X > button {
   padding-left: 5px;
   padding-right: 5px;
+}
+
+.books-container {
+  margin-top: 50px;
+  width: 100rem;
+  background-color: rgb(255, 226, 188);
+  border: 4px solid black;
+  border-radius: 10px;
+}
+
+.books-container > h1 {
+  margin-left: 30px;
+  margin-top: 30px;
+}
+
+.cards-container{
+  height: 100%;
+  margin: 20px;
+  border-radius: 10px;
+  border: 4px solid black;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 20px;
+  min-height: 750px;
+  background-color:blanchedalmond;
+}
+
+.card{
+  margin: 10px;
+  height: 300px;
+  border: 4px solid rgb(218, 178, 0);
+  background-color: rgb(255, 208, 0);
+  display: flex;
+  flex-direction: column;
+  justify-content:space-around;
+  border-radius: 5px;
+  gap: 70px;
+  padding: 20px;
+}
+
+.card .card-description{
+  display: flex;
+  flex-direction: column;
+}
+
+.card .card-buttons > button{
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 7px;
+  background-color: rgb(73, 209, 55);
 }
