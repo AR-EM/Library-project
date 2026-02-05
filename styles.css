@@ -5,7 +5,8 @@
   font-family: "Courier New", Courier, monospace;
 }
 
-html, body {
+html,
+body {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -32,10 +33,11 @@ dialog[open] {
 }
 
 .newbtn > button {
-  padding: 15px 30px;
+  padding: 20px 30px;
   font-size: 20px;
   background-color: rgb(139, 255, 240);
   border-radius: 10px;
+  border: 3px solid black;
 }
 
 .newbtn > button:hover {
@@ -43,6 +45,7 @@ dialog[open] {
 }
 
 .main-title {
+  font-size: 3.5rem;
   margin-top: 5rem;
   text-align: center;
 }
@@ -111,7 +114,7 @@ input[type="checkbox"] {
   margin-top: 30px;
 }
 
-.cards-container{
+.cards-container {
   height: 100%;
   margin: 20px;
   border-radius: 10px;
@@ -121,29 +124,42 @@ input[type="checkbox"] {
   gap: 20px;
   padding: 20px;
   min-height: 750px;
-  background-color:blanchedalmond;
+  background-color: blanchedalmond;
 }
 
-.card{
+.card {
   margin: 10px;
-  height: 300px;
+  min-height: 280px;
+  max-height: 300px;
   border: 4px solid rgb(218, 178, 0);
   background-color: rgb(255, 208, 0);
   display: flex;
   flex-direction: column;
-  justify-content:space-around;
+  justify-content: space-between;
   border-radius: 5px;
-  gap: 70px;
+  gap: 20px;
   padding: 20px;
 }
 
-.card .card-description{
+.card .card-description {
   display: flex;
   flex-direction: column;
 }
 
-.card .card-buttons > button{
-  font-size: 20px;
+.card h1 {
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  font-size: 1.7rem;
+}
+
+.card h3,
+.card h2 {
+  font-size: 1.2rem;
+}
+
+.card .card-buttons > button {
+  margin: 5px;
+  font-size: 17px;
   padding: 10px;
   border-radius: 7px;
   background-color: rgb(73, 209, 55);
